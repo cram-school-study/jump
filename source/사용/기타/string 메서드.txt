@@ -1,0 +1,31 @@
+string 메서드
+
+capitale() - 첫번째 글자만 대문자 변경
+casefold() - 모든 글자 소문자로 변경
+center(index) - index 만큼의 string 빈값의 string 만들고 가운데에 해당 문자 배열
+count(값) - string에서 값의 갯수만큼의 int 값 반환
+encode(encode='utf-8') - 암호화라고 해야하나 변경하는것
+            - 첫번째 인덱스 빈값은 유니코드로 변환, utf-8등 여러값 삽입 가능
+endswith(string) - 문자열의 첫번째 파라미터 값 맞는지 여부를 True, False 반환
+expandtabs(index) - 해당 문자열에 있는 '\t'의 탭을 인덱스값만큼으로 변경
+find(string) - 해당 문자열에 있는 string 값을 찾고, 해당 인덱스 값을 반환
+              - 없으면 -1
+format() - formating 하는것
+          - 이름 : 가변 매개변수, 인덱스 : 일반 매개변수가 존재
+          - 일반,가변 순으로는 가능하지만  가변,일반순으로는 불가능
+
+format_map() - 모르겟음
+
+index(index) - string에 해당 문자가 있는 인덱스 값 리턴, 없을시 에러
+isalnum() - string에 알파벳(a~z,A~Z),0~9 까지인것만 있으면 True,아니면 False 반환
+isalpha() - string에 알파벳(a~z,A~Z),인것만 있으면 True,아니면 False 반환
+isdecimal() - string에 캐릭터형으로 된 0~9까지의 숫자일 경우 True 아니면 False 반환
+isdigit() - string에 캐릭터형이면 True,아니면 False
+isidentifier() - strring에 알파벳(a~z),(0~9),(_)만 들어가면 True 나머진 False
+                - 다만 예외로, 첫번째에 숫자가 들어갈경우 False
+islower() - string안의 모든 알파벳이 소문자인지 여부 체크 맞으면 True, 아니면 False
+           - 단, 숫자와 띄어쓰기는 체크하지않음.
+isnumberic() - string 안의 캐릭터형 숫자 0-9까지만 있으면 True, 아니면 False
+                - 단 지수값도 숫자로 친다.
+isprintable() - ??
+isspace() - 
